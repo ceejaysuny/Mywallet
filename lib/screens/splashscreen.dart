@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_pocket_wallet/screens/loginscreen.dart';
 
-
 class Splashscreen extends StatefulWidget {
   Splashscreen({Key? key}) : super(key: key);
 
@@ -47,7 +46,6 @@ Widget _middleScreenText() {
   );
 }
 
-
 Widget _spashButton(context) {
   return Container(
     child: Row(
@@ -64,9 +62,9 @@ Widget _spashButton(context) {
           ),
           onPressed: () {
             Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const LoginPage()),
-          );
+              context,
+              MaterialPageRoute(builder: (context) => LoginPage()),
+            );
           },
           child: Icon(Icons.arrow_forward),
         ),
